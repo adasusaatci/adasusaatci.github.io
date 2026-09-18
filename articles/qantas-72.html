@@ -393,7 +393,43 @@
         Angle of Attack Sensor Photo: 
     </figcaption>
 </figure>
+<p>
+    However, the angle measured directly by the sensor is not necessarily identical to the aircraft's actual angle of attack. 
+    This is because the sensor does not measure the undisturbed free-stream airflow, but rather the local airflow at its position on the fuselage.
+</p>
 
+<p>
+    The flow field around the aircraft's forward fuselage, sideslip, and different flight conditions can influence the local flow angle sensed by the vane. 
+    Therefore, the raw angular measurement from the sensor is not used directly as the aircraft's angle of attack.
+</p>
+
+<p>
+    The local flow-angle information measured by the sensor is transmitted to the ADIRU. The Air Data Reference (ADR) function of the ADIRU processes this 
+    information and applies the necessary corrections to produce the Angle of Attack (AoA) data used by the aircraft's systems.
+</p>
+
+<h4>Total Air Temperature (TAT) Sensors</h4>
+
+<p>
+    Total Air Temperature (TAT) sensors are used to sense the total temperature of the airflow outside the aircraft. 
+    As air enters the probe, it is decelerated and its temperature is sensed by temperature-sensing elements within the probe. 
+    The sensor contains two separate sensing elements for redundancy.
+</p>
+
+<p>
+    The measured Total Air Temperature is not the same as the actual static temperature of the surrounding atmosphere, known as Static Air Temperature (SAT). 
+    As the airflow is decelerated within the probe, part of its kinetic energy appears as an increase in temperature. Consequently, particularly at high airspeeds,
+    TAT is higher than SAT.
+</p>
+
+<p>
+    The electrical temperature information from the TAT sensor is transmitted to the Air Data Reference (ADR) function of the ADIRU. 
+    The ADR uses this information together with pressure data from the pitot and static systems to calculate SAT, Mach number, True Airspeed (TAS), and other air data parameters.
+</p>
+
+<p>
+    Static air temperature and static pressure can also be used to determine atmospheric air density.
+</p>
 
         
         <!-- ============================= -->
