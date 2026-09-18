@@ -260,17 +260,76 @@
         </p>
         <p>
         Total pressure alone is not sufficient to determine airspeed. The static pressure, sensed through static ports located on the aircraft, is also required. 
-            The difference between total pressure P<sub>t</sub> and static pressure P<sub>s</sub>corresponds to dynamic pressure q.
+            The difference between total pressure P<sub>t</sub> and static pressure P<sub>s</sub> corresponds to dynamic pressure q.
         </p>
         <p>
         \[
            q = P_t - P_s
          \]
         </p>
+ <figure class="article-image">
+    <img
+        src="/images/qantas_72/pitot.png"
+        alt="Pitot Probe"
+    >
+    <figcaption>
+        Pitot Probe Photo: 
+    </figcaption>
+</figure>
+        
+<p>
+    The A330 is equipped with three independent pitot probes. They are located on the forward fuselage at positions designed to provide 
+    reliable pressure measurements from the external airflow.
+</p>
 
+<p>
+    Another important point is that the pitot probe does not perform the airspeed calculation itself. Its function is to sense pressure. 
+    The resulting pressure information is then transmitted through the aircraft's air data system to the <strong>Air Data Inertial Reference Units (ADIRUs)</strong>, 
+    where it is used in the computation of air data parameters such as airspeed.
+</p>
 
+<p>
+    When airflow enters the forward-facing opening of the pitot probe, it is decelerated until it reaches a <strong>stagnation point</strong>. 
+    As the flow velocity approaches zero, its pressure increases, allowing the pitot probe to sense the <strong>total pressure</strong>, 
+    also known as stagnation pressure.
+</p>
 
+<p>
+    Under the assumption of low-speed, incompressible flow, total pressure can be expressed as the sum of static and dynamic pressure. 
+    Therefore, dynamic pressure can be obtained from the difference between total pressure P<sub>t</sub> and static pressure P<sub>s</sub>.
+</p>
 
+<p>
+    Dynamic pressure is directly related to airspeed. However, for aircraft such as the A330 operating at high subsonic speeds, 
+    the compressibility of air can no longer be neglected. Therefore, the aircraft's air data system uses compressible-flow relationships when 
+    determining airspeed from pressure measurements.
+</p>
+
+<p>
+    Because pitot probes are directly exposed to the external environment, they can be affected by icing, water, foreign objects, or other contaminants. 
+    Incorrect pressure data from the pitot system can result in erroneous airspeed information, potentially creating serious flight-safety hazards.
+</p>
+ <figure class="article-image">
+    <img
+        src="/images/qantas_72/pitot_case.png"
+        alt="Pitot Probe on Aircraft"
+    >
+    <figcaption>
+        Pitot Probe Before Flight Photo: 
+    </figcaption>
+</figure>
+<p>
+    For this reason, pitot probes are equipped with <strong>electrical heating systems</strong> to prevent ice formation during flight. 
+    When the aircraft is parked on the ground for extended periods, <strong>pitot covers</strong> may also be installed to protect the probe 
+    openings from foreign objects and contaminants. These covers must be removed before flight.
+</p>
+
+<p>
+    In aircraft, particularly commercial airliners, it is essential that critical flight information does not depend on a single sensor. 
+    For this reason, air data systems use multiple sensors capable of measuring the same physical quantity, providing <strong>redundancy</strong> 
+    in the event of a sensor failure or unreliable measurement. The Airbus A330 is therefore equipped with three pitot probes, which form part of the 
+    aircraft's redundant air data architecture.
+</p>
 
 
 
