@@ -284,13 +284,13 @@
 
 <p>
     Another important point is that the pitot probe does not perform the airspeed calculation itself. Its function is to sense pressure. 
-    The resulting pressure information is then transmitted through the aircraft's air data system to the <strong>Air Data Inertial Reference Units (ADIRUs)</strong>, 
+    The resulting pressure information is then transmitted through the aircraft's air data system to the Air Data Inertial Reference Units (ADIRUs), 
     where it is used in the computation of air data parameters such as airspeed.
 </p>
 
 <p>
-    When airflow enters the forward-facing opening of the pitot probe, it is decelerated until it reaches a <strong>stagnation point</strong>. 
-    As the flow velocity approaches zero, its pressure increases, allowing the pitot probe to sense the <strong>total pressure</strong>, 
+    When airflow enters the forward-facing opening of the pitot probe, it is decelerated until it reaches a stagnation point. 
+    As the flow velocity approaches zero, its pressure increases, allowing the pitot probe to sense the total pressure, 
     also known as stagnation pressure.
 </p>
 
@@ -319,28 +319,28 @@
     </figcaption>
 </figure>
 <p>
-    For this reason, pitot probes are equipped with <strong>electrical heating systems</strong> to prevent ice formation during flight. 
-    When the aircraft is parked on the ground for extended periods, <strong>pitot covers</strong> may also be installed to protect the probe 
+    For this reason, pitot probes are equipped with electrical heating systems to prevent ice formation during flight. 
+    When the aircraft is parked on the ground for extended periods, pitot covers may also be installed to protect the probe 
     openings from foreign objects and contaminants. These covers must be removed before flight.
 </p>
 
 <p>
     In aircraft, particularly commercial airliners, it is essential that critical flight information does not depend on a single sensor. 
-    For this reason, air data systems use multiple sensors capable of measuring the same physical quantity, providing <strong>redundancy</strong> 
+    For this reason, air data systems use multiple sensors capable of measuring the same physical quantity, providing redundancy
     in the event of a sensor failure or unreliable measurement. The Airbus A330 is therefore equipped with three pitot probes, which form part of the 
     aircraft's redundant air data architecture.
 </p>
 <h4>Static Ports</h4>
 
 <p>
-    In addition to total pressure, <strong>static pressure</strong> is required to determine airspeed. Static ports are positioned on the aircraft 
+    In addition to total pressure, static pressure is required to determine airspeed. Static ports are positioned on the aircraft 
     fuselage in locations designed to minimize the influence of the dynamic pressure associated with the aircraft's motion through the air, 
-    allowing them to sense the <strong>ambient static pressure</strong> of the surrounding atmosphere.
+    allowing them to sense the ambient static pressure of the surrounding atmosphere.
 </p>
 
 <p>
     Under the basic assumption of incompressible flow, the difference between the total pressure P<sub>t</sub> obtained from the pitot probe and the 
-    static pressure P<sub>s</sub> obtained from the static ports corresponds to the <strong>dynamic pressure q</strong>. These pressure measurements 
+    static pressure P<sub>s</sub> obtained from the static ports corresponds to the dynamic pressure q. These pressure measurements 
     are then processed by the aircraft's air data system and used to determine airspeed and other air data parameters.
 </p>
 <div class="equation">
@@ -350,11 +350,40 @@
 </div>
 
 <p>
-    In addition to the three pitot probes, the A330 is equipped with a total of <strong>six static ports</strong> distributed on both sides of the fuselage. 
-    Together with the three pitot probes, these static pressure sources form part of the aircraft's <strong>redundant air data architecture</strong>, 
+    In addition to the three pitot probes, the A330 is equipped with a total of six static ports distributed on both sides of the fuselage. 
+    Together with the three pitot probes, these static pressure sources form part of the aircraft's redundant air data architecture, 
     which provides pressure information to three independent air data channels.
 </p>
+<h4>Air Data Module (ADM)</h4>
 
+<p>
+    The pneumatic pressure information obtained from the pitot probes and static ports cannot be used directly by the aircraft's digital avionics systems. 
+    Therefore, the pressure inputs are routed to units known as Air Data Modules (ADMs).
+</p>
+
+<p>
+    Inside each ADM, a pressure transducer converts the applied pneumatic pressure into an electrical signal. 
+    This signal is then processed and converted into digital pressure data, which is transmitted to the Air Data Inertial Reference Units (ADIRUs). 
+    In this way, the physical pressure measurements obtained from the pitot and static systems are converted into a form that can be processed by 
+    the aircraft's avionics systems.
+</p>
+
+<p>
+    The A330 is equipped with a total of eight Air Data Modules.
+</p>
+
+<h4>Angle of Attack Sensors</h4>
+
+<p>
+    The A330 is equipped with vane-type Angle of Attack (AoA) sensors located on the forward fuselage and directly exposed to the external airflow. 
+    Each freely rotating vane aligns itself with the local airflow at its position, allowing the sensor to determine the local airflow angle relative to 
+    the aircraft.
+</p>
+
+<p>
+    The angular position of the vane is converted into an electrical signal within the sensor. This signal can then be used by the aircraft's air data system 
+    to determine the aircraft's angle of attack.
+</p>
 
 
 
