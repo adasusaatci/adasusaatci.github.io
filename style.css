@@ -516,6 +516,11 @@ a {
     background-size: cover;
     background-position: center;
 }
+.integral-rl {
+    background-image: url("images/integral-rl.png");
+    background-size: cover;
+    background-position: center;
+}
 .laplace-fdm {
     background-image: url("images/laplace-fdm.png");
     background-size: cover;
