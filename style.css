@@ -765,6 +765,13 @@ footer {
 } gap: 35px;
     }
 
+@media (max-width: 600px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+}
+
     .portrait {
         max-width: 360px;
     }
@@ -803,10 +810,5 @@ footer {
         display: none;
     }
 
-@media (max-width: 600px) {
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-}
-}
+
+
