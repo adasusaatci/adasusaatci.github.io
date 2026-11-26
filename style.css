@@ -300,7 +300,12 @@ a {
 ========================= */
 
 .portrait {
+    width: 100%;
+    max-width: 280px;
+    height: 350px;
     overflow: hidden;
+    margin: 0 auto;
+    border-radius: 4px;
 }
 
 .portrait img {
