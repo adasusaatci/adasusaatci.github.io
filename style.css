@@ -526,6 +526,11 @@ a {
     background-size: cover;
     background-position: center;
 }
+.laplace-fem {
+    background-image: url("images/laplace-fem.png");
+    background-size: cover;
+    background-position: center;
+}
 
 .card-body {
     padding: 24px;
