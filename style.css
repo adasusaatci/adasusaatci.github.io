@@ -719,21 +719,19 @@ footer {
 /* =========================
    MOBILE
 ========================= */
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 800px) {
 
     .nav nav {
         display: none;
-
         position: absolute;
-
         top: 70px;
         right: 5vw;
-
         background: #0b151af5;
-
         padding: 25px;
-
         flex-direction: column;
     }
 
@@ -753,27 +751,14 @@ footer {
         display: none;
     }
 
-    .about-grid,
-.cards,
-.timeline {
-    grid-template-columns: 1fr;
-}
-
-.about-grid {
-    grid-template-columns: minmax(0, 1fr) 28% minmax(0, 0.8fr);
-    gap: 20px;
-} gap: 35px;
-    }
-
-@media (max-width: 600px) {
-    .about-grid {
+    .cards,
+    .timeline {
         grid-template-columns: 1fr;
-        gap: 35px;
     }
-}
 
-    .portrait {
-        max-width: 360px;
+    .about-grid {
+        grid-template-columns: minmax(0, 1fr) 28% minmax(0, 0.8fr);
+        gap: 20px;
     }
 
     .timeline {
@@ -781,14 +766,8 @@ footer {
     }
 
     .timeline article {
-        border-left:
-            1px solid #ffffff38;
-
-        padding:
-            0
-            0
-            40px
-            30px;
+        border-left: 1px solid #ffffff38;
+        padding: 0 0 40px 30px;
     }
 
     .timeline .dot {
@@ -802,13 +781,18 @@ footer {
 
     .contact > div {
         text-align: left;
-
         margin-top: 70px;
     }
 
     footer span {
         display: none;
     }
+}
 
+@media (max-width: 600px) {
 
-
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+}
