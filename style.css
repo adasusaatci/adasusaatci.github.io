@@ -252,14 +252,8 @@ a {
 
 .about-grid {
     display: grid;
-
-    grid-template-columns:
-        1fr
-        0.8fr
-        0.8fr;
-
-    gap: 6vw;
-
+    grid-template-columns: minmax(0, 1fr) 280px minmax(0, 0.8fr);
+    gap: 4vw;
     align-items: center;
 }
 
@@ -760,13 +754,15 @@ footer {
     }
 
     .about-grid,
-    .cards,
-    .timeline {
-        grid-template-columns: 1fr;
-    }
+.cards,
+.timeline {
+    grid-template-columns: 1fr;
+}
 
-    .about-grid {
-        gap: 35px;
+.about-grid {
+    grid-template-columns: minmax(0, 1fr) 28% minmax(0, 0.8fr);
+    gap: 20px;
+} gap: 35px;
     }
 
     .portrait {
