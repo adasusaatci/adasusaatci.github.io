@@ -500,17 +500,10 @@ a {
 }
 
 .engine {
-    background:
-        radial-gradient(
-            circle,
-            #101820 0 7%,
-            #73777a 8% 11%,
-            #171d20 12% 28%,
-            #5a6063 29% 32%,
-            #0b1114 33% 45%,
-            #29343a 46% 52%,
-            #0b1114 53%
-        );
+    background-image: url("x59/x_59_cover.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
