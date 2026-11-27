@@ -482,8 +482,7 @@ a {
         );
 }
 
-.sim,
-.qantas {
+.sim {
     background:
         linear-gradient(
             150deg,
@@ -491,6 +490,13 @@ a {
             #345064 48%,
             #11191e
         );
+}
+
+.qantas {
+    background-image: url("images/qantas_72/cover.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .engine {
